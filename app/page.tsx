@@ -2,15 +2,15 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Music, Users, Radio } from "lucide-react"
-
+import CardUI from './card';
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center p-4">
+    <div className="mt-5 min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center p-4">
       <div className="w-full max-w-4xl">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
             <Music className="h-12 w-12 text-purple-600 mr-2" />
-            <h1 className="text-4xl font-bold text-gray-900">MusicShare</h1>
+            <h1 className="text-4xl font-bold text-gray-900 ">MusicShare</h1>
           </div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Create or join music rooms and enjoy synchronized listening with friends. Share your favorite tracks and
@@ -78,7 +78,12 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        <div className = "mt-12 mb-9 items-center">
+            <CardUI/>
+        </div>
       </div>
+      
     </div>
+    
   )
 }
