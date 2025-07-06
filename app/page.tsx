@@ -79,7 +79,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className = "mt-12 mb-9 items-center">
-            <CardUI/>
+            {/* <CardUI/> */}
         </div>
       </div>
       
